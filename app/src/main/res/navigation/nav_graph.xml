@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/categoryFragment">
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.yusufmendes.sisterslabakademikotlinodevlerihafta8.view.category.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/navigateToList"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.yusufmendes.sisterslabakademikotlinodevlerihafta8.view.list.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/navigateToDetail"
+            app:destination="@id/detailFragment" />
+        <argument
+            android:name="categoryName"
+            app:argType="string"
+            app:nullable="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.yusufmendes.sisterslabakademikotlinodevlerihafta8.view.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="contentDetail"
+            app:argType="com.yusufmendes.sisterslabakademikotlinodevlerihafta8.model.Content" />
+    </fragment>
+</navigation>

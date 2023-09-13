@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "646779538384",
+    "project_id": "eglencekitabi-d4f7e",
+    "storage_bucket": "eglencekitabi-d4f7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646779538384:android:f625d071d34655f656c7d5",
+        "android_client_info": {
+          "package_name": "com.yusufmendes.sisterslabakademikotlinodevlerihafta8"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYXfT1M_rUfn_X9B7Up6x3mXtl5GLaNHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
